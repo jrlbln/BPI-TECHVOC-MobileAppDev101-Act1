@@ -1,18 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@color/color1"
+        android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile_pic"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joerel S. Belen"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="student"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:background="@drawable/ic_exp"
+            android:backgroundTint="@color/color1"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_height="75dp"
+            android:layout_width="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="@string/experience_title"
+                android:textColor="@color/color1"/>
+
+            <TextView
+                android:id="@+id/experience_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="@string/experience_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="110dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:background="@drawable/ic_languages"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/color1"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_height="100dp"
+            android:layout_width="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="0"
+                android:text="@string/languages_title"
+                android:textColor="@color/color1"/>
+
+            <TextView
+                android:id="@+id/languages_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="@string/languages_content1" />
+
+            <TextView
+                android:id="@+id/languages_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:text="@string/languages_content2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:background="@drawable/ic_educ"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/color1"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_height="75dp"
+            android:layout_width="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="@string/education_title"
+                android:textColor="@color/color1"/>
+
+            <TextView
+                android:id="@+id/education_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="@string/education_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_height="75dp"
+            android:layout_width="75dp"
+            android:background="@drawable/ic_skills"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/color1"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_height="110dp"
+            android:layout_width="250dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="@string/skills_title"
+                android:textColor="@color/color1"/>
+
+            <TextView
+                android:id="@+id/skills_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:text="@string/skills_content1"/>
+
+            <TextView
+                android:id="@+id/skills_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:text="@string/skills_content2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

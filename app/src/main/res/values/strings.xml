@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Basic Personal Information</string>
+    <string name="experience_content">I\'ve used Android Studio a bit, so I\'m pretty comfortable with how things work.</string>
+    <string name="experience_title">EXPERIENCE</string>
+
+    <string name="languages_content1">I know the basics of JAVA though Object Oriented Programming but I am seeking to further improve myself and my knowledge.</string>
+    <string name="languages_content2">I also know basic C, C++, Bash Script, HTML, CSS, and JavaScript </string>
+    <string name="languages_title">LANGUAGES</string>
+
+    <string name="education_content">Currently a 3rd Year Diploma in Information Communication Technology graduating student at Polytechnic University of the Philippines </string>
+    <string name="education_title">EDUCATION</string>
+
+    <string name="skills_content1">If there\'s something I want to learn I will give my 101% to make it my own.</string>
+    <string name="skills_content2">Frontend Development | Backend Development | Firebase | Object Oriented Programming </string>
+    <string name="skills_title">SKILLS</string>
 </resources>
